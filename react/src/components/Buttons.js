@@ -1,6 +1,5 @@
 import predictIcon1 from '../media/predict-icon-1.png'
 import predictIcon2 from '../media/predict-icon-2.png'
-import predictIcon3 from '../media/predict-icon-3.png'
 
 const RangeOption = ({ range, option, handleOptionClick }) => {
   return (

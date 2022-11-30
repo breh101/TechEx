@@ -29,11 +29,11 @@ export default function Dropdown(props) {
   const [result, setResult] = React.useState('');
   
   const fetchData = async (event) => {
-      if (base == "" || target == "" || target == null || base == null) {
+      if (base === "" || target === "" || target === null || base === null) {
           setResult("Error: Cannot have null currencies");
       } else if (input < 0) {
           setResult("Error: Cannot have a negative value");
-      } else if (input == 0 || null || undefined) {
+      } else if (input === 0 || null || undefined) {
           setResult("Error: Cannot have a zero value");
       } else {
           try {

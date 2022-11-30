@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 import HistoricalChart from "./components/HistoricalChart"
-import { Box } from "@mui/material";
 import Dropdown from "./components/Dropdown";
-import sample_data from './sample_data/USDtoEUR.csv'
-import { padding, textAlign } from "@mui/system";
-import axios from "axios";
 
 const MainPage = () => {
   const [values, setValues] = useState({
@@ -40,10 +36,6 @@ const MainPage = () => {
       </div>
       <div className='container'>
         <HistoricalChart base={ values.base } target={ values.target } histData={ values.histData } predData={ values.predData } dimensions={ dimensions } />
-      </div>
-      <br></br>
-      <br></br>
-      <div className="sumex">
       </div>
     </>
   )
